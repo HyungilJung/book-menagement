@@ -1,0 +1,37 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: book
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/book?autoReconnect=true&serverTimezone=Asia/Seoul&characterEncoding=utf8&useSSL=false
+    username: root
+    password: 1234
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    generate-ddl: false
+    show-sql: true
+    database: mysql
+  flyway:
+    url: jdbc:mysql://localhost:3306/book?autoReconnect=true&serverTimezone=Asia/Seoul&characterEncoding=utf8&useSSL=false
+    user: root
+    password: 1234
+    sql-migration-suffixes: sql
+    baseline-on-migrate: true
+    baseline-version: 0
+    encoding: UTF-8
+    locations: classpath:/db/migration
+
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+
+#logging:
+#  level:
+#    root: debug
+#  pattern:
+#    console: "[%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %c{1} - %msg%n"
