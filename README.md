@@ -15,7 +15,7 @@
 
 10. [bookmenagemant-0.0.1-SNAPSHOT.jar](https://github.com/HyungilJung/book-menagement/raw/master/libs/bookmenagemant-0.0.1-SNAPSHOT.jar) 파일을 설치하고 터미널에 접속하여 다운 받은 bookmenagemant-0.0.1-SNAPSHOT.jar 파일 경로에서 `java -jar bookmenagemant-0.0.1-SNAPSHOT.jar`을 입력하고 bookmenagemant 서버를 구동합니다.
 11. 10번 과정에서 jar file이 실행되지 않는다면, git clone를 이용하여 서버를 구동시켜줍니다.
-12.서버 구동 후에 [http://localhost:8081/swagger-ui.html](http://localhost:8081/swagger-ui.html)에서 API 작동 테스트를 진행합니다.
+12. 서버 구동 후에 [http://localhost:8081/swagger-ui.html](http://localhost:8081/swagger-ui.html)에서 API 작동 테스트를 진행합니다.
 
 # 테스트 코드
 <img width="904" alt="스크린샷 2022-03-03 오전 6 43 30" src="https://user-images.githubusercontent.com/43127088/156458811-514f07a7-34bb-4666-ae27-831128b18346.png">
